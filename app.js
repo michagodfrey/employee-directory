@@ -1,6 +1,6 @@
 let employees = [];
 const urlAPI = 'https://randomuser.me/api/?results=12&inc=name, picture, email, location, phone, dob &noinfo &nat=US';
-const container = document.querySelector('.grid-container');
+const container = document.querySelector('.flex-container');
 const overlay = document.querySelector('.overlay');
 const modalContent = document.querySelector('.modal-content');
 const modalClose = document.querySelector('.modal-close');

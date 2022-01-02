@@ -17,9 +17,8 @@ h1 {
   font-size: 36px;
   font-weight: 700;
   color: #464646;
-  margin-left: 5px;
+  margin-left: 15px;
   margin-bottom: 30px;
-
   text-shadow: -1px -1px 1px #ffffe0, 2px 2px 1px #ffffe0;
 }
 
@@ -39,22 +38,24 @@ p {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1320px;
+  max-width: 1360px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 420px);
-  grid-gap: 30px;
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 
 .card {
+  width: 420px;
+  margin: 15px;
   border: 2px solid #d4d4d4;
   border-radius: 5px;
   display: flex;
   cursor: pointer;
-  transition: all .3s;
+  transition: transform .3s;
   background-color: #fffaf0;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 14px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
 }
@@ -83,6 +84,7 @@ p {
 
 .modal {
   width: 375px;
+  max-width: 95%;
   margin: 15% auto auto;
   position: relative;
   text-align: center;
